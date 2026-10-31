@@ -1,0 +1,10 @@
+{
+    "name": "PatraBodh",
+    "short_name": "PatraBodh",
+    "description": "Government Document Assistant - Point your camera at any government form and get plain-language explanations",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#FF9933",
+    "icons": []
+}
