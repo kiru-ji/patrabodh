@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  patrabodh:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - INFERENCE_MODE=ollama
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - GEMMA_MODEL=gemma4:12b
+      - TOKEN_BUDGET=560
+    depends_on:
+      ollama:
+        condition: service_healthy
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # Pull model on first start
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        /bin/ollama serve &
+        sleep 5
+        ollama pull gemma4:12b
+        wait
+
+volumes:
+  ollama_data:
