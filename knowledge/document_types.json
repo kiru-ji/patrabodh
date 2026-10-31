@@ -1,0 +1,44 @@
+{
+  "aadhaar_enrollment": {
+    "name": "Aadhaar Enrollment Form",
+    "language": "bilingual",
+    "key_fields": ["Full Name", "DOB", "Gender", "Address", "Mobile", "Email"],
+    "common_mistakes": ["Name mismatch with supporting docs", "Wrong DOB format", "Incomplete address"],
+    "required_docs": ["Proof of Identity", "Proof of Address", "Proof of DOB"]
+  },
+  "ration_card_application": {
+    "name": "Ration Card Application",
+    "language": "hindi",
+    "key_fields": ["Head of Family Name", "Family Members", "Income", "Address", "BPL/APL Category"],
+    "common_mistakes": ["Missing family member details", "Wrong income bracket", "No photograph"],
+    "required_docs": ["Aadhaar of all members", "Income Certificate", "Address Proof", "Photographs"]
+  },
+  "pm_kisan_registration": {
+    "name": "PM-KISAN Registration Form",
+    "language": "hindi",
+    "key_fields": ["Farmer Name", "Aadhaar Number", "Bank Account", "Land Details", "Mobile Number"],
+    "common_mistakes": ["Aadhaar-bank mismatch", "Wrong IFSC code", "Land records not updated"],
+    "required_docs": ["Aadhaar Card", "Bank Passbook", "Land Records (Khatauni/7-12)"]
+  },
+  "voter_id_form6": {
+    "name": "Voter Registration Form 6",
+    "language": "bilingual",
+    "key_fields": ["Applicant Name", "Age/DOB", "Address", "Relative's Name", "Constituency"],
+    "common_mistakes": ["Age proof missing", "Address not matching current residence", "Wrong constituency"],
+    "required_docs": ["Age Proof", "Address Proof", "Photograph"]
+  },
+  "pan_form49a": {
+    "name": "PAN Application Form 49A",
+    "language": "english",
+    "key_fields": ["Full Name", "Father's Name", "DOB", "Address", "AO Code"],
+    "common_mistakes": ["Name not matching Aadhaar", "Wrong AO code", "Signature mismatch"],
+    "required_docs": ["Identity Proof", "Address Proof", "Photographs"]
+  },
+  "ayushman_bharat": {
+    "name": "Ayushman Bharat PM-JAY Enrollment",
+    "language": "hindi",
+    "key_fields": ["Family Head Name", "Aadhaar Number", "Family Members", "SECC Reference"],
+    "common_mistakes": ["Not checking eligibility first", "Aadhaar not linked", "Missing family members"],
+    "required_docs": ["Aadhaar Card", "Ration Card (if applicable)", "Family ID from SECC"]
+  }
+}

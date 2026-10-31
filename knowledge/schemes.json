@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Aadhaar Card",
+    "keywords": ["aadhaar", "आधार", "uidai", "enrollment", "अंकन"],
+    "description": "India's unique identity document issued by UIDAI. Required for most government services, bank accounts, and subsidies.",
+    "eligibility": "Any resident of India",
+    "benefits": "Universal ID for all government services, direct benefit transfers, e-KYC",
+    "apply_url": "https://uidai.gov.in/en/my-aadhaar/about-your-aadhaar.html"
+  },
+  {
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "keywords": ["pm-kisan", "किसान", "kisan samman", "agriculture", "खेती"],
+    "description": "Direct income support of ₹6,000/year to small and marginal farmer families in three equal installments.",
+    "eligibility": "Small and marginal farmers with cultivable land up to 2 hectares",
+    "benefits": "₹6,000 per year in three installments of ₹2,000 each",
+    "apply_url": "https://pmkisan.gov.in/"
+  },
+  {
+    "name": "Ayushman Bharat PM-JAY",
+    "keywords": ["ayushman", "आयुष्मान", "pm-jay", "health insurance", "स्वास्थ्य बीमा"],
+    "description": "World's largest health insurance scheme providing ₹5 lakh/family/year cashless hospitalization at empanelled hospitals.",
+    "eligibility": "Families identified through SECC 2011 data, or state-specific criteria",
+    "benefits": "₹5,00,000 per family per year for secondary and tertiary care hospitalization",
+    "apply_url": "https://pmjay.pmj-ayushmanbharat.gov.in/"
+  },
+  {
+    "name": "Ration Card / NFSA",
+    "keywords": ["ration", "राशन", "nfsa", "food security", "खाद्य सुरक्षा"],
+    "description": "Public Distribution System card for subsidized food grains under National Food Security Act.",
+    "eligibility": "Priority households and Antyodaya Anna Yojana (AAY) families as per state criteria",
+    "benefits": "Subsidized rice (₹3/kg), wheat (₹2/kg), coarse grains (₹1/kg)",
+    "apply_url": "Visit nearest Food & Supply office or state PDS portal"
+  },
+  {
+    "name": "Voter ID (EPIC)",
+    "keywords": ["voter", "मतदाता", "epic", "election", "चुनाव", "form 6"],
+    "description": "Electors Photo Identity Card for voting in elections. Form 6 is for new voter registration.",
+    "eligibility": "Indian citizen aged 18+ years, ordinary resident of the constituency",
+    "benefits": "Right to vote, accepted as valid ID proof",
+    "apply_url": "https://www.nvsp.in/"
+  },
+  {
+    "name": "PAN Card",
+    "keywords": ["pan", "पैन", "income tax", "आयकर", "form 49a"],
+    "description": "Permanent Account Number for tax identification. Required for financial transactions above specified limits.",
+    "eligibility": "Any person/entity required to file income tax returns or conduct specified financial transactions",
+    "benefits": "Tax compliance, mandatory for bank accounts, property purchase, high-value transactions",
+    "apply_url": "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"
+  },
+  {
+    "name": "Udyam Registration (MSME)",
+    "keywords": ["udyam", "उद्यम", "msme", "small business", "लघु उद्योग"],
+    "description": "Government registration for Micro, Small and Medium Enterprises. Replaces earlier Udyog Aadhaar.",
+    "eligibility": "Enterprises meeting MSME investment and turnover criteria",
+    "benefits": "Priority sector lending, subsidy on loans, preference in government tenders, ISO certification reimbursement",
+    "apply_url": "https://udyamregistration.gov.in/"
+  },
+  {
+    "name": "Birth Certificate",
+    "keywords": ["birth", "जन्म", "janam praman patra", "birth registration"],
+    "description": "Official record of birth issued by municipal corporation or gram panchayat. Essential for school admission, passport, etc.",
+    "eligibility": "Parents/guardians of a child born in India",
+    "benefits": "Proof of age and citizenship, required for school admission, passport, government schemes",
+    "apply_url": "Visit local municipal corporation or apply through state e-district portal"
+  },
+  {
+    "name": "Caste/Income Certificate",
+    "keywords": ["caste", "जाति", "income certificate", "आय प्रमाण", "reservation"],
+    "description": "Certificate proving caste category (SC/ST/OBC/EWS) or income level for reservation and scholarship benefits.",
+    "eligibility": "Residents belonging to notified categories or below specified income threshold",
+    "benefits": "Educational reservations, job reservations, fee waivers, scholarships",
+    "apply_url": "State e-district portal or Tehsil/SDM office"
+  },
+  {
+    "name": "Land Records (7/12 Extract / Khatauni)",
+    "keywords": ["land", "भूमि", "7/12", "khatauni", "खतौनी", "jamabandi"],
+    "description": "Official land ownership and cultivation records maintained by state revenue departments.",
+    "eligibility": "Land owners or authorized representatives",
+    "benefits": "Proof of ownership, required for agricultural loans, government schemes, property transactions",
+    "apply_url": "State land records portal (varies by state)"
+  }
+]
