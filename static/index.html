@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatraBodh 📄🔍 - Government Document Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="manifest" href="/static/manifest.json">
+    <meta name="theme-color" content="#FF9933">
+    <meta name="description" content="Point your camera at any government form and get plain-language explanations in Hindi or English">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📄 PatraBodh <span class="subtitle">पत्रबोध</span></h1>
+            <p class="tagline">Government Document Assistant • AI belongs to everyone</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Upload Section -->
+        <section class="upload-section" id="uploadSection">
+            <div class="upload-area" id="dropZone">
+                <div class="upload-icon">📸</div>
+                <h2>Upload a Government Document</h2>
+                <p>Take a photo or upload an image of any government form, notice, or letter</p>
+                <p class="supported">Supports: Aadhaar, Ration Card, PM-KISAN, Voter ID, PAN, Ayushman Bharat & more</p>
+                
+                <div class="upload-buttons">
+                    <label class="btn btn-primary">
+                        📷 Take Photo
+                        <input type="file" accept="image/*" capture="environment" id="cameraInput" hidden>
+                    </label>
+                    <label class="btn btn-secondary">
+                        📁 Upload File
+                        <input type="file" accept="image/jpeg,image/png,image/webp" id="fileInput" hidden>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section hidden" id="previewSection">
+            <div class="preview-container">
+                <img id="previewImage" alt="Document preview">
+                <button class="btn btn-small" id="changeImageBtn">Change Image</button>
+            </div>
+        </section>
+
+        <!-- Loading Section -->
+        <section class="loading-section hidden" id="loadingSection">
+            <div class="spinner"></div>
+            <p>Analyzing document with Gemma 4...</p>
+            <p class="loading-subtitle">Reading text • Understanding fields • Generating explanation</p>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section hidden" id="resultsSection">
+            <div class="results-header">
+                <h2>📋 Document Analysis</h2>
+                <button class="btn btn-small" id="analyzeAnotherBtn">Analyze Another</button>
+            </div>
+
+            <!-- Structured Fields (if extracted) -->
+            <div class="result-card fields-card hidden" id="fieldsCard">
+                <h3>🏷️ Extracted Information</h3>
+                <div id="fieldsContent"></div>
+            </div>
+
+            <!-- Full Analysis -->
+            <div class="result-card analysis-card">
+                <h3>📖 Explanation</h3>
+                <div id="analysisContent" class="markdown-content"></div>
+            </div>
+        </section>
+
+        <!-- Error Section -->
+        <section class="error-section hidden" id="errorSection">
+            <div class="error-card">
+                <h3>⚠️ Error</h3>
+                <p id="errorMessage"></p>
+                <button class="btn btn-primary" id="retryBtn">Try Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with <a href="https://ai.google.dev/gemma" target="_blank">Gemma 4</a> for 
+        <a href="https://www.mlh.com/events/hacktoberfest-hack-day-noida" target="_blank">Hacktoberfest Hack Day Noida 2026</a></p>
+        <p class="theme">🌍 AI belongs to everyone</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
